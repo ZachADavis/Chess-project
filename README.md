@@ -45,7 +45,7 @@ Maybe even making publicly accesible so players can play other real people inste
 Project Planning
 Date	Goals
 Thu. 06/23	Create GitHub repository. Complete README.md.
-Sun. 06/26	TBD
+Sun. 06/26	Finish the Board and pieces.
 Tue. 06/28	TBD
 Thu. 06/30	TBD
 Sun. 07/03	Deploy MVP to GitHub Pages.
