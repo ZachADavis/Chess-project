@@ -1,0 +1,19 @@
+.square {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    display: inline-block;
+}
+
+.square-grey {
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    display: inline-block;
+}
+
+#chess-board {
+    width: 100%;
+    text-align: center;
+}
