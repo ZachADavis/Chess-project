@@ -35,5 +35,20 @@ $("[empty]").on("click", function() {
             }
             $(this).css('background-color', backgroundColor)
         })
+        $(this).css("background-color", 'pink')
+        selection ={piece: targetPiece, player: targetPlayer, row: targetRow, column: targetColumn}
+    } else if (selection.piece != '' && selection.player != '' && selection.player == startTeam && 
+    (targetRow != selection.row || targetColumn !== selection.column)){
+        if (typeof targetPiece == 'undefined'){
+            targetPiece = ''
+        }
+        if (typeof targetPlayer == 'undefined'){
+            targetPlayer = ''
+        }
+        correctMove(selection.player, selection.piece, selection.row, 
+            selection.column, targetRow,targetColumn, targetPiece, 
+            targetPlayer)
+    } else {
+        console.log('No selected piece/not correct turn')
     }
 })
