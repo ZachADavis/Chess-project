@@ -1,6 +1,8 @@
 # Chess-project
 ODU-SD-04 Milestone Project: Web-browser Chess game
 
+https://zachadavis.github.io/Chess-project/
+
 Project Description
 My project here will be to make an interactive chess board game that is accessible through your web-browsers. It will be the same as the orginal game that we know and love. Of course, as this is a beginners project it will not have all the functionality of the more popular mobile Chess apps you may be familiar with but my goal is to get as close to that as possible within two weeks.
 
