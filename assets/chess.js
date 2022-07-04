@@ -1,54 +1,62 @@
-$(document).ready(function(){
+const board = document.getElementById('boardInner');
+const numContainer = document.getElementById('numberContainer');
+const letterContainer = document.getElementById('letterContainer');
+const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+const numbers = ['1', '2', '3', '4', '5', '6', '7', '8']
+const display = 'block'
 
+const renderBoard = (useLabels) =>{
+  
+  if (useLabels){
+    renderLabels() 
+  }
+  
+  let change = false
+  let color = 'white'
+  for (let i = 0; i < 64; ++i){
+    let divElement = document.createElement('div')
+    divElement.className = 'square'
+    change = i % 8 === 0 || i % 8 === NaN
+    color = change ? color : 
+    color === 'white' ? 'black' : 'white'
+    divElement.style.backgroundColor = color
+    board.appendChild(divElement)
+    change = false
+  }
+}
 
-    const selection = {piece:"", player:"", row:"", column:""};
-    startTeam = 'White'
-
-    $("[piece]").each(function(){
-        let player = $(this).attr('player'),
-        piece = $(this).attr('piece')
-        boardSquareColor = $(this).css('background-color');
-        if (piece == "" || player == ""){
-            $(this).attr('empty', 'true');
-            $(this).removeattr('player').removeattr('piece');
-            return
-        }
-        $(this).attr("empty", 'false');
-        $(this).css("background", "url(assets/pieces/"+ player + "/" + piece + ".png)").css("background-size", "100px 100px").css("background-color", boardSquareColor);
-    })
-})
-
-$("[empty]").on("click", function() {
-    console.log(startTeam)
-    let empty = $(this).attr('empty'),
-    targetPiece = $(this).attr('piece'),
-    targetPlayer = $(this).attr('player'),
-    targetRow = $(this).attr('piece'),
-    targetColumn = $(this).attr('column')
-    if (targetPlayer == startTeam) {
-        $("[empty = 'false' ]").each(function() {
-            if ($(this).hasClass('square-grey')){
-                const backgroundColor = 'grey'
-            }
-            else {
-                const backgroundColor = 'white'
-            }
-            $(this).css('background-color', backgroundColor)
-        })
-        $(this).css("background-color", 'pink')
-        selection ={piece: targetPiece, player: targetPlayer, row: targetRow, column: targetColumn}
-    } else if (selection.piece != '' && selection.player != '' && selection.player == startTeam && 
-    (targetRow != selection.row || targetColumn !== selection.column)){
-        if (typeof targetPiece == 'undefined'){
-            targetPiece = ''
-        }
-        if (typeof targetPlayer == 'undefined'){
-            targetPlayer = ''
-        }
-        correctMove(selection.player, selection.piece, selection.row, 
-            selection.column, targetRow,targetColumn, targetPiece, 
-            targetPlayer)
-    } else {
-        console.log('No selected piece/not correct turn')
+const renderBoard1 = (useLabels) =>{
+  
+  if (useLabels){
+    renderLabels() 
+  }
+ 
+  for (let i = 0; i < letters.length; ++i){
+    let row = document.createElement('div')
+    row.className = 'row'
+    row.style.flexDirection = i % 2 === 0 ? '' : 'row-reverse'; 
+    for (let i = 0; i < letters.length; ++i){
+      let square = document.createElement('div')
+      square.className = 'square'
+      square.style.backgroundColor = i % 2 === 0 ? 'white' : 'black'
+      row.appendChild(square)
     }
-})
+    board.appendChild(row)
+  }   
+ }
+
+renderLabels = () => {
+  letters.forEach((x,i)=>{
+    let divElement = document.createElement('div')
+    let divElement2 = document.createElement('div')
+    divElement.innerText = x
+    divElement.className = 'label'
+    divElement2.innerText = numbers[i]
+    divElement2.className = 'label'
+    numContainer.appendChild(divElement2)
+    letterContainer.appendChild(divElement)
+  })
+}
+
+// pass true as the argument in the function below to render the labels.
+renderBoard1(true)
