@@ -1,4 +1,4 @@
-export const gameSetup = {
+export const potentialGame = {
     'a8': 'black_rook',
     'b8': 'black_knight',
     'c8': 'black_bishop',
