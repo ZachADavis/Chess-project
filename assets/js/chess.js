@@ -1,5 +1,5 @@
 /* Refactoring Part one */
-import { piecesRender } from './services/piecesRender.service.js'
+import { piecesRender } from './services/pieceRender.service.js'
 
 addEventListener( 'DOMContentLoaded', _ => {
     piecesRender.renderPieces()

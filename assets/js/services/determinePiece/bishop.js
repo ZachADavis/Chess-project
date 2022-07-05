@@ -1,6 +1,6 @@
 import { alphPositionIn, alphPositionOut } from '../../config/Positions.config.js'
 import { chessGame } from '../../config/chessGame.config.js'
-import { $, $$$ } from '../../utils/utils.js'
+import { $, $$$ } from '../../utility/utility.js'
 import { playerTurn } from '../playerTurn.service.js'
 
 export default {

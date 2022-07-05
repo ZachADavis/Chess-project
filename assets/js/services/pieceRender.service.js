@@ -4,7 +4,7 @@ import { potentialGame } from '../config/Setup.config.js'
 import { chessGame } from '../config/chessGame.config.js'
 import { pieceHandling } from '../services/pieceHandling.service.js'
 import { piecesDetermine } from '../services/piecesDetermine.service.js'
-import { $, $$, $$$ } from '../utils/utils.js'
+import { $, $$, $$$ } from '../utility/utility.js'
 
 export const piecesRender = {
     piecesEventListeners: {},

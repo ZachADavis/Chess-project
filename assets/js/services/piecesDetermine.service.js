@@ -3,7 +3,7 @@ import knight from "./determinePiece/knight.js"
 import rook from "./determinePiece/rook.js"
 import bishop from "./determinePiece/bishop.js"
 import queen from "./determinePiece/queen.js"
-import { $, $$, $$$ } from '../utils/utils.js'
+import { $, $$, $$$ } from '../utility/utility.js'
 import { chessGame } from '../config/chessGame.config.js'
 import { playerTurn } from '../services/playerTurn.service.js'
 import king from "./determinePiece/king.js"
