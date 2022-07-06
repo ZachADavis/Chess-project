@@ -51,19 +51,19 @@ body {
     font-family: Arial;
 }
 .black-box .piece-box-text {
-    color: white;
+    color: black;
 }
 .white-box .piece-box-text {
-    color: lightpink;
+    color: black;
 }
 
 /** ####################################### */
 
 .piece-box.white-box {
-    background: #eeeed2;
+    background: #ebe5d0;
 }
 .piece-box.black-box {
-    background: #769656;
+    background: #ffe4e1;
 }
 .piece-box.piece-selected {
     background: #f6f669;
