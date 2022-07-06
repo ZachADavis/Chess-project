@@ -7,7 +7,7 @@ import { $, $$, $$$ } from '../utility/utility.js'
 import { chessGame } from '../config/chessGame.config.js'
 import { playerTurn } from '../services/playerTurn.service.js'
 import king from "./determinePiece/king.js"
-import knightKingHelpers from "./determinePiece/helpers/kingKnight.helper.js"
+import kingKnightHelpers from "./determinePiece/helpers/kingKnight.helper.js"
 
 export const piecesDetermine = {
     determinationsSelector: 'currentDeterminations',
@@ -96,7 +96,7 @@ export const piecesDetermine = {
         )
     },
 
-    ...knightKingHelpers,
+    ...kingKnightHelpers,
     ...pawn,
     ...knight,
     ...rook,

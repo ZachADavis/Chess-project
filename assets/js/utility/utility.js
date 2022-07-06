@@ -5,3 +5,5 @@ export const deepclone = obj => JSON.parse( JSON.stringify( obj ) )
 
 window.$ = $
 window.$$ = $$
+window.$$$ = $$$
+window.deepclone = deepclone

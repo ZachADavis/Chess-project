@@ -1,4 +1,4 @@
-export const alphPositionIn = {
+export const alphaPositionIn = {
     'a': '1',
     'b': '2',
     'c': '3',
@@ -9,7 +9,7 @@ export const alphPositionIn = {
     'h': '8',
 }
 
-export const alphPositionOut = {
+export const alphaPositionOut = {
     1: 'a',
     2: 'b',
     3: 'c',

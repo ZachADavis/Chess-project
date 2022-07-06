@@ -1,4 +1,3 @@
-/* Refactoring Part one */
 import { piecesRender } from './services/pieceRender.service.js'
 
 addEventListener( 'DOMContentLoaded', _ => {

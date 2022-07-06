@@ -56,7 +56,7 @@ export default {
             }
             
             const determinationPieceType = determinationPiece.getAttribute( 'piece-type')
-            const BlackPieceDetermination = playerTurn.isBlackPiece( determinationPieceType )
+            const blackPieceDetermination = playerTurn.isBlackPiece( determinationPieceType )
             const whitePieceDetermination = playerTurn.isWhitePiece( determinationPieceType )
                 
             if ( column === detcolumn ) {
@@ -69,7 +69,7 @@ export default {
             }
             else if ( 
                 isWhitePiece && whitePieceDetermination ||
-                !isWhitePiece && BlackPieceDetermination
+                !isWhitePiece && blackPieceDetermination
             ) {
                 delete this.determinations[ pieceBoxPosition ][ determinationPosition ]
             }

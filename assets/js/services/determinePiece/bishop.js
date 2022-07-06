@@ -1,4 +1,4 @@
-import { alphPositionIn, alphPositionOut } from '../../config/Positions.config.js'
+import { alphaPositionIn, alphaPositionOut } from '../../config/Positions.config.js'
 import { chessGame } from '../../config/chessGame.config.js'
 import { $, $$$ } from '../../utility/utility.js'
 import { playerTurn } from '../playerTurn.service.js'
@@ -8,7 +8,7 @@ export default {
         this.determineBishopWhiteBlack( isWhitePiece, { pieceBoxPosition })
     },
     determineBishopWhiteBlack( isWhitePiece = true, { pieceBoxPosition }) {
-        const column = +alphPositionIn[ pieceBoxPosition[ 0 ] ]
+        const column = +alphaPositionIn[ pieceBoxPosition[ 0 ] ]
         const row = +pieceBoxPosition[ 1 ]
 
         const bishopDirectionsConfig = {
@@ -19,10 +19,10 @@ export default {
                 position4: true,
             },
             positionDirections: {
-                'position1': offset => `${alphPositionOut[ column + offset ]}${ row + offset }`,
-                'position2': offset => `${alphPositionOut[ column + offset ]}${ row - offset }`,
-                'position3': offset => `${alphPositionOut[ column - offset ]}${ row - offset }`,
-                'position4': offset => `${alphPositionOut[ column - offset ]}${ row + offset }`,
+                'position1': offset => `${alphaPositionOut[ column + offset ]}${ row + offset }`,
+                'position2': offset => `${alphaPositionOut[ column + offset ]}${ row - offset }`,
+                'position3': offset => `${alphaPositionOut[ column - offset ]}${ row - offset }`,
+                'position4': offset => `${alphaPositionOut[ column - offset ]}${ row + offset }`,
             }
         }
         
@@ -63,12 +63,12 @@ export default {
         if ( !determinationPiece ) return 0
 
         const determinationPieceType = determinationPiece.getAttribute( 'piece-type')
-        const BlackPieceDetermination = playerTurn.isBlackPiece( determinationPieceType )
-        const WhitePieceDetermination = playerTurn.isWhitePiece( determinationPieceType )
+        const blackPieceDetermination = playerTurn.isBlackPiece( determinationPieceType )
+        const whitePieceDetermination = playerTurn.isWhitePiece( determinationPieceType )
 
         if ( 
-            isWhitePiece && BlackPieceDetermination ||
-            !isWhitePiece && WhitePieceDetermination
+            isWhitePiece && blackPieceDetermination ||
+            !isWhitePiece && whitePieceDetermination
         ) { 
             return 2
         }

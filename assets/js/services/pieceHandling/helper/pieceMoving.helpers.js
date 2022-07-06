@@ -1,6 +1,6 @@
 import { chessGame } from '../../../config/chessGame.config.js'
 import { $, $$$ } from '../../../utility/utility.js'
-import { piecesRender } from '../../piecesRender.service.js'
+import { piecesRender } from '../../pieceRender.service.js'
 import { playerTurn } from '../../../services/playerTurn.service.js'
 import { piecesDetermine } from '../../piecesDetermine.service.js'
 

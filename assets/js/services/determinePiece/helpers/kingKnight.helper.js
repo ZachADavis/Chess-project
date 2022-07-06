@@ -1,11 +1,11 @@
-import { alphPositionIn } from '../../../config/Positions.config.js'
+import { alphaPositionIn } from '../../../config/Positions.config.js'
 import { chessGame } from '../../../config/chessGame.config.js'
 import { $, $$$ } from '../../../utility/utility.js'
 import { playerTurn } from '../../playerTurn.service.js'
 
 export default {
     generatePotentialDeterminations({ isWhitePiece, pieceBoxPosition, determinations }) {
-        const column = +alphPositionIn[ pieceBoxPosition[ 0 ] ]
+        const column = +alphaPositionIn[ pieceBoxPosition[ 0 ] ]
         const row = +pieceBoxPosition[ 1 ]
 
         determinations.

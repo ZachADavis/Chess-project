@@ -12,7 +12,8 @@ There will be two players: Black pieces and White pieces.
 Chess pieces will include a white version and a black version of the following: Rook, Knight, Bishop, King, Queen, and pawns
 The player will be able to choose the starting color White will always go first.
 If the player does not want to choose a color a random team selector will be in place to auto-input players into a respective team color.
-The code will be written with HTML, CSS, JQuery/JavaScript
+The code will be written with HTML, CSS, Object-Oriented JavaScript consisting of five configuration files for easy access to changes.
+
 The winner will be decided once one player locks the other in check-mate: AKA preventing the other player to make any moves 
 Which means logic will be in place that when the players king piece is in line of fire the player cannot move other pieces unless it removes the king from danger.
 Progress will be determined by the amount of pieces a player has taken from the opposition.

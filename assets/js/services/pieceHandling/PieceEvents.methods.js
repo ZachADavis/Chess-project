@@ -1,6 +1,6 @@
 import Click from './handleEvents/Click.js'
-import MouseEnter from './handleEvents/mouseEnter.js'
-import MouseLeave from './handleEvents/mouseLeave.js'
+import mouseEnter from './handleEvents/mouseEnter.js'
+import mouseLeave from './handleEvents/mouseLeave.js'
 
 export default {
     ...Click,
