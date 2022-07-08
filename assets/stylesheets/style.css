@@ -60,10 +60,10 @@ body {
 /** ####################################### */
 
 .piece-box.white-box {
-    background: #ebe5d0;
+    background: #b94e48;
 }
 .piece-box.black-box {
-    background: #ffe4e1;
+    background: #c0c0c0;
 }
 .piece-box.piece-selected {
     background: #f6f669;
