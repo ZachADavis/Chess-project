@@ -1,5 +1,5 @@
 export default {
-    handlePieceMouseleave({ pieceBoxElement, pieceBoxPosition }) {
+    mouseLeave({ pieceBoxElement, pieceBoxPosition }) {
         if ( checkMate.gameOver ) {
             return
         }

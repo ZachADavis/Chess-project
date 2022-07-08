@@ -2,7 +2,7 @@ import { playerTurn } from '../../../services/playerTurn.service.js'
 import { piecesDetermine } from '../../piecesDetermine.service.js'
 
 export default {
-    handlePieceMouseenter({ pieceBoxElement, pieceBoxPosition, pieceElement, pieceType }) {
+    mouseEnter({ pieceBoxElement, pieceBoxPosition, pieceElement, pieceType }) {
         if ( checkMate.gameOver ) {
             return
         }

@@ -4,7 +4,7 @@ import { piecesDetermine } from '../../piecesDetermine.service.js'
 import handlePieceMovingHelpers from '../helper/pieceMoving.helpers.js'
 
 export default {
-    handlePieceClick({ pieceBoxElement, pieceBoxPosition, pieceElement, pieceType }) {
+    Click({ pieceBoxElement, pieceBoxPosition, pieceElement, pieceType }) {
         if ( checkMate.gameOver ) {
             return
         }
