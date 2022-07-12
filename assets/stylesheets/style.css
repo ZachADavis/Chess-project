@@ -79,7 +79,7 @@ body {
     border: 0.1px solid rgb(24, 155, 236);
 }
 .piece-box.piece-not-allowed {
-    background: coral;
+    background: #ff0000;
 }
 .piece-box.piece-pointer {
     cursor: pointer;
