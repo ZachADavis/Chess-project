@@ -13,9 +13,8 @@ Navigate to https://zachadavis.github.io
 N/A
 
 ## Developing
+Here are the goals of the future and the types of functionality I plan to incorperate:
 
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
 # Implimentation Goals
 * Add Back-end
 * Multiplayer
