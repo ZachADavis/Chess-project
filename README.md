@@ -5,8 +5,8 @@ My goal was to make a fully functional online chess game.
 
 
 ## Installing / Getting started
-```Navigate to https://zachadavis.github.io
-    Have Fun!```
+Navigate to https://zachadavis.github.io
+    Have Fun!
 
 ### Initial Configuration
 
